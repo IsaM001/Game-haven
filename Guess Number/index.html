@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="number.css" />
+  </head>
+  <body>
+    <div class="header container">
+      <h1>
+        GUESS THE NUMBER <br />
+        🤔
+      </h1>
+      <h3>
+        The computer will generate a random number from 1 - 50. Can you guess
+        what the number is!
+      </h3>
+    </div>
+    <div class="random-number container">
+      <h2>
+        The random number has been generated. Time for you to guess. <br />
+        👇🏼
+      </h2>
+      <div class="random hidden">
+        <div class="ran-num container">
+          <h1 class="number">?</h1>
+        </div>
+        <div class="tracker container">
+          <h2 class="message">Time for you to guess.</h2>
+          <br />
+          <h3 class="score-label">
+            Attempts left: <span class="score">10</span>
+          </h3>
+          <br />
+          <h3 class="highscore-label">
+            Highscore: <span class="highscore"></span>0
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="main container">
+      <div class="input-container">
+        <input
+          type="number"
+          name="number"
+          id="input"
+          min="1"
+          max="50"
+          step="any"
+        />
+      </div>
+      <div class="button-container">
+        <button id="check-btn" class="check-button">Check</button>
+      </div>
+    </div>
+
+    <div class="container restart">
+      <button id="restart">Restart</button>
+    </div>
+    <script src="numbers.js"></script>
+  </body>
+</html>

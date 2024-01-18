@@ -1,0 +1,158 @@
+body {
+  background: url("/images/newbgk.png") center/cover no-repeat fixed;
+}
+* {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+/* Style for the header section */
+.header {
+  text-align: center;
+  background-color: #fb8500;
+  color: #ffffff;
+  width: 150px;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 800px;
+}
+
+/* Style for the flexbox container */
+.flexbox-container {
+  background-color: #ffd670;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid black;
+}
+
+.flex-item {
+  width: calc(33.33% - 20px);
+  min-width: 200px;
+  margin: 10px;
+  height: auto;
+  border: 3px solid black;
+  background-color: #fb8500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style for buttons within flex items */
+.flex-item button {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  background-color: Gold;
+  color: black;
+  cursor: pointer;
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Additional styles for the Play Now button */
+.flex-item .play-now-btn {
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+/* Style for text within the flex items */
+.flex-item p {
+  margin: 0;
+}
+
+/* Style for images within the flex items */
+
+/* Style for images within the flex items */
+.flex-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.pop-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  font-size: large;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.play-now-btn {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  background-color: Gold;
+  color: black;
+  cursor: pointer;
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Media query for responsive design (e.g., for screens with a max width of 600px) */
+@media (min-width: 475px) {
+  .flex-item {
+    flex: 0 0 calc(33.33% - 20px); /* Three items per row */
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .flex-item {
+    flex: 0 0 calc(33.33% - 20px); /* Three items per row */
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .flex-item {
+    flex: 0 0 calc(33.33% - 20px); /* Three items per row */
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .flex-item {
+    flex: 0 0 calc(33.33% - 20px); /* Three items per row */
+  }
+}

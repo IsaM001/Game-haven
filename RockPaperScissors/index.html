@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="rps.css" />
+  </head>
+  <body>
+    <div class="header container">
+      <h1>Rock 🪨 Paper 📰 Scissors ✂️</h1>
+      <h3>Can you beat the computer?</h3>
+    </div>
+    <div class="player container">
+      <h2>Pick your option 🫵</h2>
+      <h4 class="player-score">Your score: 0</h4>
+      <div class="option container">
+        <div class="Rock">
+          <input type="radio" id="rock" name="choice" />
+          <label for="rock">
+            <img src="rock.png" alt="Rock" class="rock" />
+            <h3>Rock</h3>
+          </label>
+        </div>
+        <div class="Rock">
+          <input type="radio" id="paper" name="choice" />
+          <label for="paper">
+            <img src="paper.png" alt="Paper" class="paper" />
+            <h3>Paper</h3>
+          </label>
+        </div>
+        <div class="Rock">
+          <input type="radio" id="scissors" name="choice" />
+          <label for="scissors">
+            <img src="sciss.png" alt="Scissors" class="scissors" />
+            <h3>Scissors</h3>
+          </label>
+        </div>
+      </div>
+      <div class="button">
+        <button class="confirm-button">Confirm Choice</button>
+      </div>
+    </div>
+
+    <div class="comp container">
+      <h2>Computer is choosing 🤖</h2>
+      <h4 class="comp-score">Computer score: 0</h4>
+
+      <div class="option container"></div>
+    </div>
+
+    <div class="container result hidden"></div>
+    <div class="button">
+      <button class="restart-button">Restart</button>
+    </div>
+    <script src="rps.js"></script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+body {
+  background-color: #d36135;
+}
+
+* {
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+.header {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.player {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+  text-align: center;
+}
+
+.player-score {
+  background-color: #044389;
+  color: white;
+  text-align: center;
+  width: 32%;
+}
+
+.comp-score {
+  background-color: #fcff4b;
+  text-align: center;
+  width: 32%;
+}
+
+.comp {
+  color: black;
+  text-align: center;
+}
+
+.option {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.Rock {
+  margin: 10px;
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.option img {
+  width: 100px; /* Adjust the size as needed */
+  height: 100px;
+}
+
+.confirm-button,
+.restart-button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  cursor: pointer;
+  border: 3px solid black;
+  padding: 10px;
+  display: inline-block;
+}
+
+input[type="radio"]:checked + label {
+  border-color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.choice-image {
+  width: 100px; /* Adjust the size as needed */
+  height: 100px;
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+.result-text {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: blue;
+  background-color: white;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+
+  .flex-item {
+    flex: 0 0 calc(25% - 20px);
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
